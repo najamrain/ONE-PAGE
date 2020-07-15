@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+      .re-disp{
+        position: absolute;
+        background: white;
+        top: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 2;
+      }
+    </style>
+
+    <title>About Page</title>
+  </head>
+  <body>
+    <div class="container-fluid container1 ">
+        <div class="row">
+            <div class="col-xi-6 col-md-6 col-sm-6 col-6 abt-box1 pl-2">
+             <a href="index.html"><span class="logo"></span></a>   
+             
+            </div>
+            <div class="col-xi-6 col-md-6 col-sm-6  col-6 abt-box2">
+              <div class="lines-container" onclick="clickFunction(this)">
+                <div class="lines line1"></div>
+                <div class="lines line2"></div>
+                <div class="lines line3"></div>
+                  
+                </div>
+          
+            </div>
+        </div>
+        
+    </div>
+    <div class="container-fluid px-0">
+     <div class="row form-row py-5">
+       <div class="row-overlay"></div>
+        <div class="col-xl-6  col-lg-6 col-md-12 contact-left p-5 text-light">
+
+          <h1 class="contact-heading">Contact Us</h1>
+          <h2 class="contact-heading2">Get In Touch With Us</h2> 
+          <p>Communications from customers are very vital for our organisation. You may either call us in the given number or submit your queries using the form provided right-hand side. We will ensure that you get a reply within 24 hours time.</p>
+
+          
+        </div>
+      
+        
+       <div class="form-container col-xl-6 col-lg-6 col-md-12 position-relative">
+        <form action="POST" data-netlify="true"  class=" my-form">
+        <label for="">First Name</label><br>
+        <input type="text" class="inp" name="first_name"  onfocus="focusf(this)" onblur="blurf(this)" placeholder="Enter The Name"> <br>
+        <label for="">Last Name</label> <br>
+        <input type="email" class="inp" email="last_name" onfocus="focusf(this)" onblur="blurf(this)" placeholder="Enter The Last Name"> <br>
+        <label for="">Email</label> <br>
+        <input type="text" class="inp"  name="email" onfocus="focusf(this)" onblur="blurf(this)" placeholder="Enter Valid Email Address"> <br>
+        <label for="">Address</label> <br>
+        <textarea type="text" class="inp" name="message" onfocus="focusf(this)" onblur="blurf(this)" placeholder="Enter The Address"> </textarea> <br>
+        <input type="submit" value="Submit Info" class="btn-block  btn-outline-secondry mt-3 py-3 submit-button"></textarea>     
+    </form>
+    </div>
+    
+     </div>
+    </div>
+    <!-- OVERLAY STARTS HERE -->
+        <div class="container-fluid index-container-fluid">
+        <div class="row index-row">
+            <div class="col-xi-6 col-md-6 box1 pl-2">
+             <a href=""><span class="logo"></span></a>   
+               <ul class="nav-ull">
+                   <li><a href="./about.html">OUR POWER</a></li>
+                   <li><a href="">OUR SERVICES</a></li>
+                   <li><a href="">OUR EMPOWER</a></li>
+                   <li><a href="">OUR MASTERS</a></li>
+                   <li><a href="">YOUR COMMAND</a></li>
+                   <li><a href="">LIVE FEEDBACK</a></li>
+                   <li><a href="">OUR SERVICES</a></li>
+
+               </ul>
+            </div>
+            <div class="col-xi-6 col-md-6 box2">
+            <b class="float-right x bg-danger py-1 px-3 mt-3" onclick="removeFunction(this)">X</b>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script>
+      function clickFunction(){
+        document.querySelector(".index-container-fluid").classList.add("re-disp");
+      }
+      function removeFunction(){
+        document.querySelector(".index-container-fluid").classList.remove("re-disp");
+
+      }
+    </script>
+    <script></script>
+    <script src="form.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

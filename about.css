@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap");
+
+* {
+  /* box-sizing: border-box; */
+  font-family: "Roboto", sans-serif;
+}
+body {
+  overflow-x: hidden;
+}
+.logo {
+  display: inline-block;
+  width: 300px;
+  height: 70px;
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+  border: 1px solid red;
+  /* padding: 0.5rem; */
+  padding: 0.7rem 1rem;
+  background: url(logo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+.container1 .row {
+  /* background: rgb(213, 243, 17); */
+  background: lightgrey;
+}
+.abt-box2 .lines-container {
+  /* position: relative; */
+  width: 36px;
+  height: 26px;
+  background: lightgrey;
+}
+
+.abt-box2 .lines-container:hover {
+  cursor: pointer;
+}
+.abt-box2 {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.abt-box2 .lines-container .line1 {
+  width: 34px;
+  height: 4px;
+  background: red;
+  margin: 0.2rem 0;
+}
+
+.abt-box2 .lines-container .line2 {
+  width: 34px;
+  height: 4px;
+  background: red;
+  margin: 0.4rem 0;
+}
+
+.abt-box2 .lines-container .line3 {
+  width: 34px;
+  height: 4px;
+  background: red;
+  margin: 0.2rem 0;
+}
+
+.abt-box1 {
+  padding-left: 3rem;
+}
+
+@media (max-width: 800px) {
+  .about-box2 {
+    height: 50vh;
+  }
+}
+/* Form starts here */
+.form-container {
+  display: flex;
+  justify-content: center;
+}
+.my-form {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  border: 1px solid white;
+  padding: 3rem;
+  border-radius: 0.2rem;
+}
+.form-container .inp {
+  width: 500px;
+  height: 63px;
+  outline: none;
+  border: none;
+  background: white;
+  opacity: 0.8;
+  padding: 0.3rem;
+  border-radius: 0.2rem;
+  border: 3px solid white;
+  border-radius: 0.3rem;
+  color: black;
+  margin-bottom: 0.3rem;
+  font-size: large;
+  font-weight: bold;
+  font-family: "IBM Plex Serif", serif;
+}
+.form-container label {
+  color: white;
+  font-size: 1.5rem;
+  font-family: "IBM Plex Serif", serif;
+}
+.submit-button {
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 0.2rem;
+  outline: none;
+}
+.form-row {
+  background: url(img4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+}
+.contact-left p {
+  font-size: 1.5rem;
+  font-family: "IBM Plex Serif", serif;
+  color: lightgrey;
+}
+.row-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #333;
+  opacity: 0.6;
+}
+.contact-heading {
+  font-size: 7rem;
+  color: white;
+  font-family: "IBM Plex Serif", serif;
+  color: rgb(198, 185, 185);
+}
+.contact-heading2 {
+  font-size: 3rem;
+  color: rgb(236, 136, 136);
+  word-spacing: 0rem;
+  font-family: "IBM Plex Serif", serif;
+}
+.touch-heading {
+  font-style: 6rem;
+}
+.index-container-fluid {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  bottom: 0;
+  transition: left 0.2s ease-in-out;
+  z-index: 2;
+}
+.x {
+  font-size: 2rem;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.x:hover {
+  color: white;
+}
